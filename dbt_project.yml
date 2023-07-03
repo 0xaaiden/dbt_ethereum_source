@@ -103,14 +103,16 @@ models:
               - level_modeling
               - proj_erc1155
 vars:
+    ethereum_schema: ethereum
+    ethereum_database: labelstry
     ethereum_source:
-        transactions: "{{ source('ethereum', 'transactions') }}"
-        token_transfers: "{{ source('ethereum', 'token_transfers') }}"
-        tokens: "{{ source('ethereum', 'tokens') }}"
-        contracts: "{{ source('ethereum', 'contracts') }}"
-        blocks: "{{ source('ethereum', 'blocks') }}"
-        logs: "{{ source('ethereum', 'logs') }}"
-        traces: "{{ source('ethereum', 'traces') }}"
+        transactions: "{{ source('labelstry', 'transactions') }}"
+        token_transfers: "{{ source('labelstry', 'token_transfers') }}"
+        tokens: "{{ source('labelstry', 'tokens') }}"
+        contracts: "{{ source('labelstry', 'contracts') }}"
+        blocks: "{{ source('labelstry', 'blocks') }}"
+        logs: "{{ source('labelstry', 'logs') }}"
+        traces: "{{ source('labelstry', 'traces') }}"
         using_traces: true
         using_logs: true
         using_token_transfers: true
