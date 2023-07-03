@@ -103,6 +103,8 @@ models:
               - level_modeling
               - proj_erc1155
 vars:
+    #ethereum_schema: your_schema_name
+    ethereum_database: labelstry
     ethereum_source:
         transactions: "{{ source('ethereum', 'transactions') }}"
         token_transfers: "{{ source('ethereum', 'token_transfers') }}"
