@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: labelstry
+  - name: "labelstry"
     schema: "{{var ('ethereum_schema', 'ethereum')}}"
     tables:
       - name: transactions
